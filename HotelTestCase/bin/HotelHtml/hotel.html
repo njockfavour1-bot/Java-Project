@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HOTEL BOOKING</title>
+</head>
+<body>
+<table border = 2 cellspacing = 3>
+<thead>
+<tr>
+<th> Name </th>
+<th> Price </th>
+</tr>
+</thead>
+<tbody>
+<table>
+<tr>
+<td> Test </td>
+<td> $200 </td>
+</tr>
+</body>
+<%
+List<hotel> list = UserVisible.availableHotels();
+for(Hotel h:list)
+{
+	%>
+	<tr>
+	<td><%_ out.println(h.getName()+" "+h.getPrice());%></td>
+	</tr>
+}
+%>
+</hotel>
+</tbody>
+</table>
+<h2> MERRY GO ROUND/ 6 DAYS </h2>
+<form action = "">
+Enter Name
+</form>
+</html>
